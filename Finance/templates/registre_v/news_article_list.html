@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio List</title>
+</head>
+<body>
+    <h1>Portfolio List</h1>
+    <ul>
+        {% for new in news %}
+            <li>{{ news.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

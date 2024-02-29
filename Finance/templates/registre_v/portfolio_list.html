@@ -1,0 +1,15 @@
+<!-- portfolio_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio List</title>
+</head>
+<body>
+    <h1>Portfolio List</h1>
+    <ul>
+        {% for portfolio in portfolios %}
+            <li>{{ portfolio.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

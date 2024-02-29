@@ -1,0 +1,18 @@
+# Ignore Django database file
+db.sqlite3
+
+# Ignore static files directory
+staticfiles/
+
+# Ignore media files directory
+media/
+
+# Ignore virtual environment directory
+venv/
+
+# ignore .env file
+.env
+
+# Ignore any compiled Python files
+*.pyc
+__pycache__/
