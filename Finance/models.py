@@ -20,13 +20,13 @@ class Portfolio(models.Model):
 
 class Subscription(models.Model):
     """
-    A model to represent a user's subscription to a portfolio.
-    Attributes:
-        user (User): The user who is subscribing to the portfolio.
-        portfolio (Portfolio): The portfolio being subscribed to.
-        frequency (str): The frequency of updates for the subscription (daily or weekly).
-    """
-
+A model to represent a user's subscription to a portfolio.
+Attributes:
+    user (User): The user who is subscribing to the portfolio.
+    portfolio (Portfolio): The portfolio being subscribed to.
+    frequency (str): The frequency of updates for the subscription (daily or weekly).
+    subscribed_at (DateTime): The time when the user subscribed to the portfolio.
+"""
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     portfolio = models.ForeignKey('Portfolio', on_delete=models.CASCADE)
     frequency = models.CharField(max_length=25, choices=[('daily', 'Daily'), ('weekly', 'Weekly')])
