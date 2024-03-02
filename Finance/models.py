@@ -30,6 +30,7 @@ class Subscription(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     portfolio = models.ForeignKey('Portfolio', on_delete=models.CASCADE)
     frequency = models.CharField(max_length=25, choices=[('daily', 'Daily'), ('weekly', 'Weekly')])
+    subscribed_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         """Return a string representation of the subscription."""
