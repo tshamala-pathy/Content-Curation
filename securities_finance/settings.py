@@ -128,7 +128,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 
 ANYMAIL = {
-    "SENDGRID_API_KEY": "<my_sendgrid_api_key>",
+    "SENDGRID_API_KEY": config('SENDGRID_API_KEY'),
 }
 EMAIL_BACKEND = "anymail.backends.sendgrid.EmailBackend"
 
