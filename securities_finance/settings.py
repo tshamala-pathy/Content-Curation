@@ -137,9 +137,5 @@ EMAIL_BACKEND = "anymail.backends.sendgrid.EmailBackend"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-
-'''DEBUG = env.bool('DEBUG', default=False)
-# SECRET_KEY = env.str('django-insecure-@9a(hf2ejqp!)(=eu0rpro^e8r%ha58)jmh_8dqmw_#&xfyf3%')
-DATABASES = {
-    'default': env.db(),
-}'''
+DEBUG = env.bool('DEBUG', False)
+SECRET_KEY = env.str('SECRET_KEY')
