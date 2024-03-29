@@ -41,7 +41,7 @@ If you'd like to contribute to this project, follow these steps to clone the rep
 ### Cloning the Repository
 
 1. **Clone the Repository:**
-   ```bash
+   ```
    git clone https://github.com/tshamala-pathy/Content-Curation.git
 
 2. **Navigate to the Project Directory:**
@@ -52,21 +52,21 @@ If you'd like to contribute to this project, follow these steps to clone the rep
 Install Dependencies:
 
 bash
-```bash
+```
    pip install -r requirements.txt
 ```
 
 
 Apply Migrations:
 
-bash
+
 ```
 python manage.py migrate
 ```
 
 Create a Superuser:
 
-bash
+
 ```
 python manage.py createsuperuser
 ```
@@ -75,7 +75,7 @@ Follow the prompts to create a superuser account, which you can use to access th
 
 Run the Development Server:
 
-bash
+
 ```
 python manage.py runserver
 ```
@@ -96,7 +96,7 @@ Clone the forked repository to your local machine using the git clone command as
 
 Create a New Branch:
 
-bash
+
 ```
 git checkout -b feature-branch
 ```
