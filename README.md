@@ -46,37 +46,37 @@ If you'd like to contribute to this project, follow these steps to clone the rep
    ```
 
 2. **Navigate to the Project Directory:**
-
+      ```
     cd securities_finance
+      ```
 
-3. Setting Up the Project Locally
+
+4. Setting Up the Project Locally
 Install Dependencies:
-
-
     ```
    pip install -r requirements.txt
     ```
 
 
-Apply Migrations:
+5. Apply Migrations:
     ```
    python manage.py migrate
-    ```
+    ```  
 
 
-Create a Superuser:
+6. Create a Superuser:
     ```
    python manage.py createsuperuser
     ```
 
 Follow the prompts to create a superuser account, which you can use to access the Django admin interface.
 
-Run the Development Server:
+7. Run the Development Server:
     ```
    python manage.py runserver
     ```
 
-Access the Application:
+8. Access the Application:
 Open your web browser and navigate to  
     ```
    http://127.0.0.1:8000/
@@ -90,7 +90,7 @@ Click on the "Fork" button on the GitHub repository page to create a fork of the
 Clone the Forked Repository:
 Clone the forked repository to your local machine using the git clone command as shown earlier.
 
-Create a New Branch:
+1. Create a New Branch:
     ```
    git checkout -b feature-branch
     ```
@@ -100,7 +100,7 @@ Replace feature-branch with a descriptive name for your branch.
 Make Changes:
 Make your desired changes to the codebase.
 
-Commit Changes:
+2. Commit Changes:
     ```
    git add .
     ```
@@ -110,7 +110,7 @@ Commit Changes:
 
 Replace Your commit message with a brief description of the changes you made.
 
-Push Changes:
+3. Push Changes:
     ```
    git push origin feature-branch
     ```
