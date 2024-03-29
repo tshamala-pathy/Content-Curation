@@ -43,6 +43,7 @@ If you'd like to contribute to this project, follow these steps to clone the rep
 1. **Clone the Repository:**
    ```
    git clone https://github.com/tshamala-pathy/Content-Curation.git
+   ```
 
 2. **Navigate to the Project Directory:**
 
