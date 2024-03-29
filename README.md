@@ -61,14 +61,14 @@ Apply Migrations:
 
 
 ```
-python manage.py migrate
+   python manage.py migrate
 ```
 
 Create a Superuser:
 
 
 ```
-python manage.py createsuperuser
+   python manage.py createsuperuser
 ```
 
 Follow the prompts to create a superuser account, which you can use to access the Django admin interface.
@@ -77,13 +77,13 @@ Run the Development Server:
 
 
 ```
-python manage.py runserver
+   python manage.py runserver
 ```
 
 Access the Application:
 Open your web browser and navigate to  
 ```
-http://127.0.0.1:8000/
+   http://127.0.0.1:8000/
 ```
 to view the application.
 
@@ -98,7 +98,7 @@ Create a New Branch:
 
 
 ```
-git checkout -b feature-branch
+   git checkout -b feature-branch
 ```
 
 Replace feature-branch with a descriptive name for your branch.
@@ -109,10 +109,10 @@ Make your desired changes to the codebase.
 Commit Changes:
 
 ```
-git add .
+   git add .
 ```
 ```
-git commit -m "Your commit message"
+   git commit -m "Your commit message"
 ```
 
 Replace Your commit message with a brief description of the changes you made.
@@ -120,7 +120,7 @@ Replace Your commit message with a brief description of the changes you made.
 Push Changes:
 
 ```
-git push origin feature-branch
+   git push origin feature-branch
 ```
 
 Create a Pull Request:
