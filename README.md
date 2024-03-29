@@ -54,26 +54,38 @@ Install Dependencies:
 bash
 ```bash
    pip install -r requirements.txt
+```
+
 
 Apply Migrations:
 
 bash
-Copy code
+```
 python manage.py migrate
+```
+
 Create a Superuser:
 
 bash
-Copy code
+```
 python manage.py createsuperuser
+```
+
 Follow the prompts to create a superuser account, which you can use to access the Django admin interface.
 
 Run the Development Server:
 
 bash
-Copy code
+```
 python manage.py runserver
+```
+
 Access the Application:
-Open your web browser and navigate to http://127.0.0.1:8000/ to view the application.
+Open your web browser and navigate to  
+```
+http://127.0.0.1:8000/
+```
+to view the application.
 
 Contributing to the Project
 Fork the Repository:
@@ -85,8 +97,10 @@ Clone the forked repository to your local machine using the git clone command as
 Create a New Branch:
 
 bash
-Copy code
+```
 git checkout -b feature-branch
+```
+
 Replace feature-branch with a descriptive name for your branch.
 
 Make Changes:
@@ -94,17 +108,21 @@ Make your desired changes to the codebase.
 
 Commit Changes:
 
-bash
-Copy code
+```
 git add .
+```
+```
 git commit -m "Your commit message"
+```
+
 Replace Your commit message with a brief description of the changes you made.
 
 Push Changes:
 
-bash
-Copy code
+```
 git push origin feature-branch
+```
+
 Create a Pull Request:
 
 Go to your forked repository on GitHub.
