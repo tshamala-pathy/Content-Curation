@@ -51,7 +51,7 @@ If you'd like to contribute to this project, follow these steps to clone the rep
 3. Setting Up the Project Locally
 Install Dependencies:
 
-bash
+
 ```
    pip install -r requirements.txt
 ```
