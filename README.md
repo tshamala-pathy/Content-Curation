@@ -59,15 +59,12 @@ Install Dependencies:
 
 
 Apply Migrations:
-
-
     ```
    python manage.py migrate
     ```
 
+
 Create a Superuser:
-
-
     ```
    python manage.py createsuperuser
     ```
@@ -75,8 +72,6 @@ Create a Superuser:
 Follow the prompts to create a superuser account, which you can use to access the Django admin interface.
 
 Run the Development Server:
-
-
     ```
    python manage.py runserver
     ```
@@ -96,8 +91,6 @@ Clone the Forked Repository:
 Clone the forked repository to your local machine using the git clone command as shown earlier.
 
 Create a New Branch:
-
-
     ```
    git checkout -b feature-branch
     ```
@@ -108,7 +101,6 @@ Make Changes:
 Make your desired changes to the codebase.
 
 Commit Changes:
-
     ```
    git add .
     ```
@@ -119,7 +111,6 @@ Commit Changes:
 Replace Your commit message with a brief description of the changes you made.
 
 Push Changes:
-
     ```
    git push origin feature-branch
     ```
