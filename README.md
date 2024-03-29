@@ -52,8 +52,9 @@ If you'd like to contribute to this project, follow these steps to clone the rep
 Install Dependencies:
 
 bash
-Copy code
-pip install -r requirements.txt
+```bash
+   pip install -r requirements.txt
+
 Apply Migrations:
 
 bash
