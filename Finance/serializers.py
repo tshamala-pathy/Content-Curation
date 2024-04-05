@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Portfolio, Subscription, Article_News, Stock
+from .models import Portfolio, Subscription, New_Article, Stock
 
 class PortfolioSerializer(serializers.ModelSerializer):
     class Meta:
@@ -13,7 +13,7 @@ class SubscriptionSerializer(serializers.ModelSerializer):
 
 class NewsArticleSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Article_News
+        model = New_Article
         fields = '__all__'
 
 class StockSerializer(serializers.ModelSerializer):

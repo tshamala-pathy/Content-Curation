@@ -2,7 +2,7 @@ from rest_framework import generics
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import status
-from .models import Portfolio, Subscription, Article_News, Stock
+from .models import Portfolio, Subscription, New_Article, Stock
 from .serializers import PortfolioSerializer, SubscriptionSerializer, NewsArticleSerializer, StockSerializer
 
 class Create_Port_List(generics.ListCreateAPIView):
@@ -22,7 +22,7 @@ class Create_Sub_List(generics.ListCreateAPIView):
         serializer.save(user=self.request.user)
 
 class Create_N_A_List(generics.ListCreateAPIView):
-    queryset = Article_News.objects.all()
+    queryset = New_Article.objects.all()
     serializer_class = NewsArticleSerializer
 
     def post(self, request, *args, **kwargs):
