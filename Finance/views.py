@@ -4,6 +4,9 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework import status
 from .models import Portfolio, Subscription, New_Article, Stock
 from .serializers import PortfolioSerializer, SubscriptionSerializer, NewsArticleSerializer, StockSerializer
+from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
+
 
 class Create_Port_List(generics.ListCreateAPIView):
     queryset = Portfolio.objects.all()
@@ -40,3 +43,23 @@ class Create_Stock_Lis(generics.ListCreateAPIView):
             return super().post(request, *args, **kwargs)
         except Exception as e:
             return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+@login_required
+def user_dashboard(request):
+    user = request.user
+
+    portfolios = Portfolio.objects.filter(user=user)
+    subscriptions = Subscription.objects.filter(user=user)
+    news_articles = New_Article.objects.all()
+    stocks = Stock.objects.all()
+
+    context = {
+        'user': user,
+        'portfolios': portfolios,
+        'subscriptions': subscriptions,
+        'news_articles': news_articles,
+        'stocks': stocks,
+    }
+
+    return render(request, 'registre_v/dashboard.html', context)
+
