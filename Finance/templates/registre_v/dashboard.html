@@ -6,32 +6,32 @@
 <body>
     <h1>Welcome, {{ user.username }}!</h1>
     
-    <h2>Portfolios</h2>
-    <ul>
-        {% for portfolio in portfolios %}
-            <li>{{ portfolio.name }}</li>
-        {% endfor %}
-    </ul>
+    <h2>Create Portfolio</h2>
+    <form method="post" action="{% url 'create_portfolio' %}">
+        {% csrf_token %}
+        {{ portfolio_form.as_p }}
+        <button type="submit">Create</button>
+    </form>
     
-    <h2>Subscriptions</h2>
-    <ul>
-        {% for subscription in subscriptions %}
-            <li>{{ subscription.portfolio.name }} - {{ subscription.frequency }}</li>
-        {% endfor %}
-    </ul>
+    <h2>Create Subscription</h2>
+    <form method="post" action="{% url 'create_subscription' %}">
+        {% csrf_token %}
+        {{ subscription_form.as_p }}
+        <button type="submit">Create</button>
+    </form>
     
-    <h2>News Articles</h2>
-    <ul>
-        {% for news_article in news_articles %}
-            <li>{{ news_article.title }} - {{ news_article.source }}</li>
-        {% endfor %}
-    </ul>
+    <h2>Create News Article</h2>
+    <form method="post" action="{% url 'create_news_article' %}">
+        {% csrf_token %}
+        {{ new_article_form.as_p }}
+        <button type="submit">Create</button>
+    </form>
     
-    <h2>Stocks</h2>
-    <ul>
-        {% for stock in stocks %}
-            <li>{{ stock.symbol }} - {{ stock.name }}</li>
-        {% endfor %}
-    </ul>
+    <h2>Create Stock</h2>
+    <form method="post" action="{% url 'create_stock' %}">
+        {% csrf_token %}
+        {{ stock_form.as_p }}
+        <button type="submit">Create</button>
+    </form>
 </body>
 </html>
