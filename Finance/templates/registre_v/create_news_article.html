@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create News Article</title>
+</head>
+<body>
+    <h2>Create News Article</h2>
+    <form method="post" action="{% url 'create_news_article' %}">
+        {% csrf_token %}
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
+        
+        <label for="content">Content:</label><br>
+        <textarea id="content" name="content" rows="4" cols="50" required></textarea><br><br>
+        
+        <label for="source">Source:</label><br>
+        <input type="text" id="source" name="source" required><br><br>
+        
+        <label for="stocks">Related Stocks:</label><br>
+        <select id="stocks" name="stocks" multiple>
+            {% for stock in stocks %}
+                <option value="{{ stock.id }}">{{ stock.name }}</option>
+            {% endfor %}
+        </select><br><br>
+        
+        <button type="submit">Create</button>
+    </form>
+</body>
+</html>

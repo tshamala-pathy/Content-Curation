@@ -36,7 +36,7 @@ Attributes:
         """Return a string representation of the subscription."""
         return f"{self.user.username} subscribed to {self.portfolio.name} ({self.frequency})"
 
-class Article_News(models.Model):
+class New_Article(models.Model):
     """
     A model to represent a news article.
     
